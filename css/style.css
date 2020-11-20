@@ -1,6 +1,11 @@
 
 .container {
-  margin-top: 100px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.container [class*=col-] {
+  padding: 10px;
 }
 
 #lezioni .container img {
@@ -10,27 +15,20 @@
   margin-left: auto;
 }
 
-#lezioni {
-  text-align: center;
-}
-
-#steps {
-  text-align: center;
-}
-
 /* BLOCCO PERCHE */
-#why {
-  text-align: center;
-}
 
 #why .container .first, .second, .third {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 #why .container img {
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px
+}
+
+#why .container hr {
+  margin-top: 20px;
 }
 
 /* COMMON */
@@ -41,8 +39,43 @@
 
 img {
   height: 200px;
+  margin: 20px 0;
 }
 
-.clear {
-  clear: both;
+/* MD */
+@media screen and (max-width: 991px) {
+  img {
+    height: 150px;
+    margin: 10px 0;
+  }
+
+  .container {
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 20px;
+  }
+
+  .container.grey {
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    border: solid black 2px;
+  }
+
+  #why .container .first,.second,.third {
+    margin-top: 20px;
+  }
 }
+/* /MD */
+
+/* XS */
+@media screen and (max-width: 767px){
+  img {
+    height: 100px;
+    margin: 10px 0;
+  }
+
+  .container {
+    margin-top: 5px;
+  }
+}
+/* /XS */
